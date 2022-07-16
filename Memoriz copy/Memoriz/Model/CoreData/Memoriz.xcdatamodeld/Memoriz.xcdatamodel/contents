@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PinPosition" representedClassName="PinPosition" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="userData" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserData" inverseName="pin" inverseEntity="UserData"/>
+    </entity>
+    <entity name="SingleView" representedClassName="SingleView" syncable="YES" codeGenerationType="class">
+        <attribute name="captionText" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="randomQuote" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserData" inverseName="singleView" inverseEntity="UserData"/>
+    </entity>
+    <entity name="UserData" representedClassName="UserData" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <relationship name="pin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PinPosition" inverseName="userData" inverseEntity="PinPosition"/>
+        <relationship name="singleView" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SingleView" inverseName="user" inverseEntity="SingleView"/>
+    </entity>
+    <elements>
+        <element name="PinPosition" positionX="-91.6513671875" positionY="9.23297119140625" width="128" height="88"/>
+        <element name="SingleView" positionX="321.8755493164062" positionY="-6.25030517578125" width="128" height="103"/>
+        <element name="UserData" positionX="109.2541503906249" positionY="-89.518310546875" width="128" height="88"/>
+    </elements>
+</model>
