@@ -38,16 +38,16 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="591.5"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hfF-8t-aXF">
-                                                    <rect key="frame" x="16" y="591.5" width="382" height="90.5"/>
+                                                    <rect key="frame" x="5" y="591.5" width="404" height="90.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memories - the one thing that can never be taken away from us" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlb-m6-P7m">
-                                                            <rect key="frame" x="7" y="0.0" width="368" height="60"/>
+                                                            <rect key="frame" x="7" y="0.0" width="390" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make lots of them!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJK-hy-pz9">
-                                                            <rect key="frame" x="15" y="70" width="352" height="20.5"/>
+                                                            <rect key="frame" x="15" y="70" width="374" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -68,10 +68,10 @@
                                                 <constraint firstItem="hfF-8t-aXF" firstAttribute="top" secondItem="2Wb-ZD-k78" secondAttribute="bottom" id="Fdd-8P-pqP"/>
                                                 <constraint firstAttribute="bottom" secondItem="hfF-8t-aXF" secondAttribute="bottom" constant="16" id="fTr-DU-qU7"/>
                                                 <constraint firstItem="2Wb-ZD-k78" firstAttribute="leading" secondItem="bpb-qV-b2z" secondAttribute="leading" id="liW-Hl-wxB"/>
-                                                <constraint firstItem="hfF-8t-aXF" firstAttribute="leading" secondItem="bpb-qV-b2z" secondAttribute="leading" constant="16" id="mUf-uL-0EK"/>
+                                                <constraint firstItem="hfF-8t-aXF" firstAttribute="leading" secondItem="bpb-qV-b2z" secondAttribute="leading" constant="5" id="mUf-uL-0EK"/>
                                                 <constraint firstItem="2Wb-ZD-k78" firstAttribute="top" secondItem="bpb-qV-b2z" secondAttribute="top" id="ojc-wq-UfW"/>
                                                 <constraint firstAttribute="trailing" secondItem="2Wb-ZD-k78" secondAttribute="trailing" id="vAK-r9-01a"/>
-                                                <constraint firstAttribute="trailing" secondItem="hfF-8t-aXF" secondAttribute="trailing" constant="16" id="zSM-aE-y6U"/>
+                                                <constraint firstAttribute="trailing" secondItem="hfF-8t-aXF" secondAttribute="trailing" constant="5" id="zSM-aE-y6U"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="698"/>

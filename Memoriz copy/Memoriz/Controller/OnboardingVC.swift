@@ -43,8 +43,8 @@ class OnboardingViewController: UIViewController {
         if currentPage == slides.count - 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "HomeNC") as! UINavigationController
-//            controller.modalPresentationStyle = .fullScreen
-//            controller.modalTransitionStyle = .partialCurl
+            controller.modalPresentationStyle = .fullScreen
+            controller.modalTransitionStyle = .partialCurl
             UserDefaults.standard.set(true, forKey: "hasOnboarded")
             present(controller, animated: true, completion: nil)
 

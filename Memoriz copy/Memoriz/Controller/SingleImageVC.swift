@@ -79,11 +79,6 @@ extension SingleImageViewController: UITextFieldDelegate{
         }catch{
             print(error)
         }
-//        do{
-//            try fetchedResultsController.performFetch()
-//        }catch{
-//            print(error.localizedDescription)
-//        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -109,9 +104,10 @@ extension SingleImageViewController: UITextFieldDelegate{
     }
     
     func unsubscribeFromKeyboardNotification(){
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self)
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+//
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     @objc func keyboardWillHide(_ notification:Notification){
@@ -137,7 +133,7 @@ extension SingleImageViewController{
                 self.quoteLoading(false)
             }else{
                 self.getQuoteFailure(message: error?.localizedDescription ?? "The internet connection appears to be offline")
-                self.quoteLoading(true)
+                self.quoteLoading(false)
             }
         }
     }
@@ -171,6 +167,14 @@ extension SingleImageViewController{
 //                self.quoteLoading(false)
 //            }
 //        }
+//    }
+    
+    
+//MARK: Another method
+//    func unsubscribeFromKeyboardNotification(){
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+//
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
 //    }
     
 }

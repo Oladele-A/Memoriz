@@ -36,7 +36,7 @@ class PictureCollectionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUpFetchedResultsController()
-        self.collectionView.reloadData()
+        collectionView.reloadData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
