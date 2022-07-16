@@ -11,3 +11,7 @@
 - This project was built using UIKit components in Xcode.
 - This project incorporate data from a network source by calling the `Zenquote.io` API. This data was parsed using JSONDecoder and appropriate error is displayed to the user whenever there is a problem fetching data from the network. 
 - Data is persisted in the app using Core Data and UserDefaults. 
+
+## Requirements
+- Basic to intermediate proficieny with Xcode and Swift
+- iOS 15
